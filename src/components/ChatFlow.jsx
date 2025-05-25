@@ -37,6 +37,14 @@ const ChatFlow = () => {
     setIsNameSet(true);
   };
 
+  // Handle the default case when thumbs down is clicked
+  const handleShowDefault = () => {
+    // Navigate to the "Default" key in your JSON
+    if (chatbotData["Default"]) {
+      setNavStack([...navStack, "Default"]);
+    }
+  };
+
   return (
     <ChatStep
       message={processedMessage}
@@ -47,6 +55,7 @@ const ChatFlow = () => {
       isNameSet={isNameSet}
       onNameSubmit={handleNameSubmit}
       showFeedback={true}
+      onShowDefault={handleShowDefault} // Pass the handler to ChatStep
     />
   );
 };

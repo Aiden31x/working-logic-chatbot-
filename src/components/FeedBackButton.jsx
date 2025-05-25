@@ -13,18 +13,11 @@ const FeedbackButtons = ({ messageId, onFeedback, onShowDefault }) => {
       console.log('Feedback type:', type);
       console.log('Timestamp:', new Date().toISOString());
     } else if (type === 'down') {
-      // Show default case from JSON
-      const defaultCase = {
-        "message": "Contact our 24/7 helppline number",
-        "options": [
-          "Back to Main Menu"
-        ]
-      };
-      
+      // Navigate to the Default case from JSON
       if (onShowDefault) {
-        onShowDefault(defaultCase);
+        onShowDefault();
       }
-      console.log('Showing default case for thumbs down feedback');
+      console.log('Navigating to default case for thumbs down feedback');
     }
     
     // Call original feedback handler if provided
