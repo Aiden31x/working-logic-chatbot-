@@ -1,0 +1,429 @@
+{
+    "main": {
+      "message": "Hi {{userName}}, what would you like to explore?",
+      "options": [
+        "SII PROGRAMME",
+        "REGISTRATION AND CHOICE FILLING",
+        "COSTS AND FEES",
+        "COURSES",
+        "GLOBALLY ACCEPTED DEGREES",
+        "ENGLISH LANGUAGE SKILLS",
+        "VISA REGULATIONS",
+        "ADMISSIONS"
+      ]
+    },
+    "SII PROGRAMME": {
+      "message": "Here are some options about the Study in India Programme:",
+      "options": [
+        "About Study in India Programme",
+        "Benefits of SII Programme",
+        "3 Pillars of SII Programme",
+        "List of Institutes & Courses",
+        "How to Apply to SII",
+        "Available Courses",
+        "Contact Project Officers",
+        "Back to Main Menu"
+      ]
+    },
+    "About Study in India Programme": {
+      "message": "The Study In India (SII) programme is a flagship project of the Government of India executed by the Ministry of Education (MoE), Government of India. The programme has been put together to facilitate and encourage international students to study in India’s premier Indian institutes. The Study in India website will be the one stop solution for all information about the studying in India.",
+      "options": [
+        "Benefits of SII Programme",
+        "3 Pillars of SII Programme",
+        "List of Institutes & Courses",
+        "Back to SII PROGRAMME",
+        "Back to Main Menu"
+      ]
+    },
+  "Benefits of SII Programme": {
+  "message": "The Study in India Programme offers international students a chance to study at top Indian institutions. It includes 600+ partner institutes offering 8000+ courses in Engineering, Law, Management, Humanities, Yoga, and more.\n\nEligible institutes are NAAC ≥ 3.01, NIRF ranked, INIs/IOEs, listed in QS Asia Rankings, or have UGC/AICTE autonomous status. Scholarships or fee waivers (10%–100%) are available based on merit and institute discretion.",
+  "options": [
+    "About Study in India Programme",
+    "3 Pillars of SII Programme",
+    "List of Institutes & Courses",
+    "Back to SII PROGRAMME",
+    "Back to Main Menu"
+  ]
+},
+
+
+ "3 Pillars of SII Programme": {
+  "message": "The Study in India Programme is built on three pillars:\n\n**Learn** – Access top institutions offering affordable, quality education with a focus on both theory and practical skills.\n\n**Thrive** – Join a global, multicultural environment that fosters growth and innovation—alumni work at top firms like Microsoft and Google.\n\n**Explore** – Experience India’s rich culture, heritage sites, festivals, and diverse lifestyle alongside your studies.",
+  "options": [
+    "About Study in India Programme",
+    "Benefits of SII Programme",
+    "List of Institutes & Courses",
+    "Back to SII PROGRAMME",
+    "Back to Main Menu"
+  ]
+},
+    "List of Institutes & Courses": {
+      "message": "The list of the institutes and courses offered under the Study in India programme can be found by clicking on the ‘Courses’ page present on the top of the homepage of the SII website.",
+      "options": [
+        "About Study in India Programme",
+        "Benefits of SII Programme",
+        "How to Apply to SII",
+        "Back to SII PROGRAMME",
+        "Back to Main Menu"
+      ]
+    },
+ "How to Apply to SII": {
+  "message": "Applying to the Study in India programme is simple. Just follow these key steps:\n1. **Register** – Sign up on the SII website.\n2. **Plan** – Estimate your budget.\n3. **Apply** – Choose your preferred course and institute.\n4. **Check Result** – View your allotted course and institute.\n5. **Prepare** – Get ready for your educational journey to India.",
+  "options": [
+    "Available Courses",
+    "Contact Project Officers",
+    "List of Institutes & Courses",
+    "Back to SII PROGRAMME",
+    "Back to Main Menu"
+  ]
+},
+
+    "Available Courses": {
+      "message": "The Institutions within the ‘Study in India’ offer a range of courses across various disciplines. It has over 2600 courses ranging from popular courses like Engineering & Technology, Agriculture, Law, Arts & Humanities, Paramedical & Allied Health courses, Languages, niche courses such as Yoga, Buddhist Studies, etc",
+      "options": [
+        "List of Institutes & Courses",
+        "Contact Project Officers",
+        "How to Apply to SII",
+        "Back to SII PROGRAMME",
+        "Back to Main Menu"
+      ]
+    },
+    "Contact Project Officers": {
+      "message": "Yes, the website, https://studyinindia.gov.in/, is the backbone of the Study in India operations and what it offers to international students. You can get all information needed from the officers of Study in India through a Toll-Free Number (+91120-6565065) and email at studyinindia@aicte-india.org. (support@studyinIndia.gov.in) You may also find large information in social media pages – Facebook, twitters, blogs as well",
+      "options": [
+        "Available Courses",
+        "How to Apply to SII",
+        "List of Institutes & Courses",
+        "Back to SII PROGRAMME",
+        "Back to Main Menu"
+      ]
+    },
+    "COURSES": {
+      "message": "Explore information about available courses:",
+      "options": [
+        "How many courses and Institutes are covered under Study in India",
+        "Can I change my allotted institute",
+        "What type of degrees are provided under niche courses",
+        "Can I apply for courses of study in Medicine and its related areas with the Program",
+        "What are STEM and non-STEM courses",
+        "Back to Main Menu"
+      ]
+    },
+    "How many courses and Institutes are covered under Study in India": {
+      "message": "",
+      "options": [
+        "Can I change my allotted institute",
+        "What type of degrees are provided under niche courses",
+        "Can I apply for courses of study in Medicine and its related areas with the Program",
+        "What are STEM and non-STEM courses",
+        "Back to COURSES",
+        "Back to Main Menu"
+      ]
+    },
+    "Can I change my allotted institute": {
+      "message": "",
+      "options": [
+        "How many courses and Institutes are covered under Study in India",
+        "What type of degrees are provided under niche courses",
+        "Can I apply for courses of study in Medicine and its related areas with the Program",
+        "What are STEM and non-STEM courses",
+        "Back to COURSES",
+        "Back to Main Menu"
+      ]
+    },
+    "What type of degrees are provided under niche courses": {
+      "message": "",
+      "options": [
+        "How many courses and Institutes are covered under Study in India",
+        "Can I change my allotted institute",
+        "Can I apply for courses of study in Medicine and its related areas with the Program",
+        "What are STEM and non-STEM courses",
+        "Back to COURSES",
+        "Back to Main Menu"
+      ]
+    },
+    "Can I apply for courses of study in Medicine and its related areas with the Program": {
+      "message": "",
+      "options": [
+        "How many courses and Institutes are covered under Study in India",
+        "Can I change my allotted institute",
+        "What type of degrees are provided under niche courses",
+        "What are STEM and non-STEM courses",
+        "Back to COURSES",
+        "Back to Main Menu"
+      ]
+    },
+    "What are STEM and non-STEM courses": {
+      "message": "",
+      "options": [
+        "How many courses and Institutes are covered under Study in India",
+        "Can I change my allotted institute",
+        "What type of degrees are provided under niche courses",
+        "Can I apply for courses of study in Medicine and its related areas with the Program",
+        "Back to COURSES",
+        "Back to Main Menu"
+      ]
+    },
+      "REGISTRATION AND CHOICE FILLING": {
+        "message": "Here’s everything you need to know about registration and filling your choices:",
+        "options": [
+          "What information do I need to fill application",
+          "How many preferences of institutes can I choose",
+          "I am having trouble with grade conversion",
+          "Back to Main Menu"
+        ]
+      },
+      "What information do I need to fill application": {
+        "message": "You’ll need your academic records, passport details, a valid email, scanned photograph, and other basic personal details to complete the application.",
+        "options": [
+          "How many preferences of institutes can I choose",
+          "I am having trouble with grade conversion",
+          "Back to REGISTRATION AND CHOICE FILLING",
+          "Back to Main Menu"
+        ]
+      },
+      "How many preferences of institutes can I choose": {
+        "message": "You can choose and prioritize up to three preferred institutes and corresponding courses while filling your application.",
+        "options": [
+          "What information do I need to fill application",
+          "I am having trouble with grade conversion",
+          "Back to REGISTRATION AND CHOICE FILLING",
+          "Back to Main Menu"
+        ]
+      },
+      "I am having trouble with grade conversion": {
+        "message": "If you're unsure how to convert your grades, refer to the grade conversion guide on the SII website or contact support for assistance.",
+        "options": [
+          "What information do I need to fill application",
+          "How many preferences of institutes can I choose",
+          "Back to REGISTRATION AND CHOICE FILLING",
+          "Back to Main Menu"
+        ]
+      },
+    
+      "COSTS AND FEES": {
+        "message": "Here’s what to expect regarding costs and fees:",
+        "options": [
+          "What is annual average living cost of international student in india",
+          "What is annual tuition fee for courses in india",
+          "Can my institution provide with additional concessions?",
+          "Back to Main Menu"
+        ]
+      },
+      "What is annual average living cost of international student in india": {
+        "message": "The annual average living cost for international students in India ranges from USD 3,000 to 6,000 depending on city and lifestyle.",
+        "options": [
+          "What is annual tuition fee for courses in india",
+          "Can my institution provide with additional concessions?",
+          "Back to COSTS AND FEES",
+          "Back to Main Menu"
+        ]
+      },
+      "What is annual tuition fee for courses in india": {
+        "message": "Annual tuition fees vary by course and institute, generally ranging from USD 3,500 to 8,000 for undergraduate courses.",
+        "options": [
+          "What is annual average living cost of international student in india",
+          "Can my institution provide with additional concessions?",
+          "Back to COSTS AND FEES",
+          "Back to Main Menu"
+        ]
+      },
+      "Can my institution provide with additional concessions?": {
+        "message": "Yes, some institutions offer scholarships or partial fee waivers based on merit or institutional discretion.",
+        "options": [
+          "What is annual average living cost of international student in india",
+          "What is annual tuition fee for courses in india",
+          "Back to COSTS AND FEES",
+          "Back to Main Menu"
+        ]
+      },
+    
+      "GLOBALLY ACCEPTED DEGREES": {
+        "message": "Understand the global value of your degree from Indian institutes:",
+        "options": [
+          "Where can i view the ranking list of SII Partner institutes",
+          "Are SII partner institutes partner quality assured",
+          "Are degrees from SII partnered institutes recognized in the global market?",
+          "Back to Main Menu"
+        ]
+      },
+      "Where can i view the ranking list of SII Partner institutes": {
+        "message": "You can view rankings on the official SII website and NIRF rankings released annually by the Government of India.",
+        "options": [
+          "Are SII partner institutes partner quality assured",
+          "Are degrees from SII partnered institutes recognized in the global market?",
+          "Back to GLOBALLY ACCEPTED DEGREES",
+          "Back to Main Menu"
+        ]
+      },
+      "Are SII partner institutes partner quality assured": {
+        "message": "Yes, all SII institutes meet quality criteria including NAAC accreditation, NIRF rankings, or status like INI, IOE, etc.",
+        "options": [
+          "Where can i view the ranking list of SII Partner institutes",
+          "Are degrees from SII partnered institutes recognized in the global market?",
+          "Back to GLOBALLY ACCEPTED DEGREES",
+          "Back to Main Menu"
+        ]
+      },
+      "Are degrees from SII partnered institutes recognized in the global market?": {
+        "message": "Yes, degrees are recognized globally, especially from institutions with NAAC/NIRF/UGC/AICTE accreditations and international collaborations.",
+        "options": [
+          "Where can i view the ranking list of SII Partner institutes",
+          "Are SII partner institutes partner quality assured",
+          "Back to GLOBALLY ACCEPTED DEGREES",
+          "Back to Main Menu"
+        ]
+      },
+    
+      "ENGLISH LANGUAGE SKILLS": {
+        "message": "Learn more about language expectations:",
+        "options": [
+          "What is the medium of study at the SII partnered institutes",
+          "What english proficiency tests are popular in india",
+          "Am i still able to study in india if english is not my first language",
+          "Back to Main Menu"
+        ]
+      },
+      "What is the medium of study at the SII partnered institutes": {
+        "message": "English is the primary medium of instruction at most SII partner institutes.",
+        "options": [
+          "What english proficiency tests are popular in india",
+          "Am i still able to study in india if english is not my first language",
+          "Back to ENGLISH LANGUAGE SKILLS",
+          "Back to Main Menu"
+        ]
+      },
+      "What english proficiency tests are popular in india": {
+        "message": "TOEFL, IELTS, and PTE are commonly accepted. Some institutes may have their own assessments too.",
+        "options": [
+          "What is the medium of study at the SII partnered institutes",
+          "Am i still able to study in india if english is not my first language",
+          "Back to ENGLISH LANGUAGE SKILLS",
+          "Back to Main Menu"
+        ]
+      },
+      "Am i still able to study in india if english is not my first language": {
+        "message": "Yes. As long as you meet the institute’s English proficiency requirements, you can apply and study in India.",
+        "options": [
+          "What is the medium of study at the SII partnered institutes",
+          "What english proficiency tests are popular in india",
+          "Back to ENGLISH LANGUAGE SKILLS",
+          "Back to Main Menu"
+        ]
+      },
+    
+      "VISA REGULATIONS": {
+        "message": "Here’s what you need to know about student visas in India:",
+        "options": [
+          "Where can i apply for indian student visa",
+          "What is the average fees for indian student visa",
+          "What are the documents required for a indian student visa",
+          "Would i get a work visa after graduation",
+          "Do i get medical insurance with my student visa",
+          "Back to Main Menu"
+        ]
+      },
+      "Where can i apply for indian student visa": {
+        "message": "Apply online through the Indian Government's official visa portal or visit your nearest Indian embassy/consulate.",
+        "options": [
+          "What is the average fees for indian student visa",
+          "What are the documents required for a indian student visa",
+          "Would i get a work visa after graduation",
+          "Do i get medical insurance with my student visa",
+          "Back to VISA REGULATIONS",
+          "Back to Main Menu"
+        ]
+      },
+      "What is the average fees for indian student visa": {
+        "message": "The fee varies by country but generally ranges from USD 75 to 150 for a student visa.",
+        "options": [
+          "Where can i apply for indian student visa",
+          "What are the documents required for a indian student visa",
+          "Would i get a work visa after graduation",
+          "Do i get medical insurance with my student visa",
+          "Back to VISA REGULATIONS",
+          "Back to Main Menu"
+        ]
+      },
+      "What are the documents required for a indian student visa": {
+        "message": "You’ll need an admission letter, valid passport, financial proof, passport photos, and a completed visa application form.",
+        "options": [
+          "Where can i apply for indian student visa",
+          "What is the average fees for indian student visa",
+          "Would i get a work visa after graduation",
+          "Do i get medical insurance with my student visa",
+          "Back to VISA REGULATIONS",
+          "Back to Main Menu"
+        ]
+      },
+      "Would i get a work visa after graduation": {
+        "message": "India currently does not offer post-study work visas by default. You may apply for employment visas based on job offers.",
+        "options": [
+          "Where can i apply for indian student visa",
+          "What is the average fees for indian student visa",
+          "Do i get medical insurance with my student visa",
+          "Back to VISA REGULATIONS",
+          "Back to Main Menu"
+        ]
+      },
+      "Do i get medical insurance with my student visa": {
+        "message": "Medical insurance is often required and may be arranged by the institution or separately by the student.",
+        "options": [
+          "Where can i apply for indian student visa",
+          "What is the average fees for indian student visa",
+          "Would i get a work visa after graduation",
+          "Back to VISA REGULATIONS",
+          "Back to Main Menu"
+        ]
+      },
+    
+      "ADMISSIONS": {
+        "message": "Admissions FAQs for Study in India:",
+        "options": [
+          "What if institute rejects my application would i be given another chance to apply",
+          "If it shows \"Institute Action is pending\", what do I expect in such a case",
+          "What information is present on the result that gets published on the student dashboard",
+          "Can NRIs apply for study in india programme",
+          "Back to Main Menu"
+        ]
+      },
+      "What if institute rejects my application would i be given another chance to apply": {
+        "message": "Yes, if one institute rejects your application, you may still be considered by others depending on availability.",
+        "options": [
+          "If it shows \"Institute Action is pending\", what do I expect in such a case",
+          "What information is present on the result that gets published on the student dashboard",
+          "Back to ADMISSIONS",
+          "Back to Main Menu"
+        ]
+      },
+      "If it shows \"Institute Action is pending\", what do I expect in such a case": {
+        "message": "It means your application is under review by the institute. Final decision will reflect once evaluated.",
+        "options": [
+          "What if institute rejects my application would i be given another chance to apply",
+          "What information is present on the result that gets published on the student dashboard",
+          "Back to ADMISSIONS",
+          "Back to Main Menu"
+        ]
+      },
+      "What information is present on the result that gets published on the student dashboard": {
+        "message": "The result includes your allotted course and institute, acceptance deadline, and next steps for admission.",
+        "options": [
+          "What if institute rejects my application would i be given another chance to apply",
+          "If it shows \"Institute Action is pending\", what do I expect in such a case",
+          "Back to ADMISSIONS",
+          "Back to Main Menu"
+        ]
+      },
+      "Can NRIs apply for study in india programme": {
+        "message": "Yes, NRIs can apply, but they may be subject to separate application categories and eligibility criteria.",
+        "options": [
+          "What if institute rejects my application would i be given another chance to apply",
+          "If it shows \"Institute Action is pending\", what do I expect in such a case",
+          "Back to ADMISSIONS",
+          "Back to Main Menu"
+        ]
+      }
+    }
+    
+  
+  
