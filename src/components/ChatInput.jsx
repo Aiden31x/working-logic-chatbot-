@@ -1,20 +1,33 @@
 // ChatInput.jsx
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 
-const ChatInput = ({ onSendMessage, placeholder = "Enter your name...", disabled = false }) => {
+const ChatInput = ({
+  onSendMessage,
+  placeholder = "Enter your name...",
+  disabled = false,
+}) => {
   const [inputValue, setInputValue] = useState('');
+  const inputRef = useRef(null);
+
+  useEffect(() => {
+    if (inputRef.current) {
+      inputRef.current.focus(); // Auto-focus on mount
+    }
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (inputValue.trim() && !disabled) {
-      onSendMessage(inputValue.trim());
+    const trimmed = inputValue.trim();
+    if (trimmed && !disabled) {
+      console.log("Sending:", trimmed); // debug log
+      onSendMessage(trimmed);
       setInputValue('');
     }
   };
 
-  const handleKeyPress = (e) => {
+  const handleKeyDown = (e) => {
     if (e.key === 'Enter' && !e.shiftKey) {
-      e.preventDefault();
+      e.preventDefault(); // Prevent default newline
       handleSubmit(e);
     }
   };
@@ -24,14 +37,18 @@ const ChatInput = ({ onSendMessage, placeholder = "Enter your name...", disabled
       <form onSubmit={handleSubmit} className="chat-input-form">
         <div className="chat-input-wrapper">
           <input
+            ref={inputRef}
             type="text"
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
-            onKeyPress={handleKeyPress}
+            onKeyDown={(e)=>{
+                handleKeyDown(e);
+            }}
             placeholder={placeholder}
             className="chat-input-field"
             disabled={disabled}
           />
+
           <button
             type="submit"
             className="chat-send-button"
@@ -62,7 +79,7 @@ const ChatInput = ({ onSendMessage, placeholder = "Enter your name...", disabled
           </button>
         </div>
       </form>
-      
+
       <div className="chat-footer">
         <span className="chat-footer-text">
           Chat <span className="lightning-emoji">⚡</span> by <span className="brand-name">StudyIndia</span>
