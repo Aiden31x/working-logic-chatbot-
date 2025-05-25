@@ -1,20 +1,44 @@
-// FeedbackButtons.jsx
+// FeedbackButtons.jsx - With Tailwind CSS styling
 import React, { useState } from 'react';
 
-const FeedbackButtons = ({ messageId, onFeedback }) => {
+const FeedbackButtons = ({ messageId, onFeedback, onShowDefault }) => {
   const [selectedFeedback, setSelectedFeedback] = useState(null);
 
   const handleFeedback = (type) => {
     setSelectedFeedback(type);
+    
+    if (type === 'up') {
+      // Log thumbs up value
+      console.log(`Thumbs up feedback for message: ${messageId}`);
+      console.log('Feedback type:', type);
+      console.log('Timestamp:', new Date().toISOString());
+    } else if (type === 'down') {
+      // Show default case from JSON
+      const defaultCase = {
+        "message": "Contact our 24/7 helppline number",
+        "options": [
+          "Back to Main Menu"
+        ]
+      };
+      
+      if (onShowDefault) {
+        onShowDefault(defaultCase);
+      }
+      console.log('Showing default case for thumbs down feedback');
+    }
+    
+    // Call original feedback handler if provided
     if (onFeedback) {
       onFeedback(messageId, type);
     }
   };
 
   return (
-    <div className="feedback-buttons">
+    <div className="flex gap-2 items-center">
       <button
-        className={`feedback-btn ${selectedFeedback === 'up' ? 'selected' : ''}`}
+        className={`flex items-center justify-center p-2 border-none bg-transparent rounded-lg cursor-pointer transition-colors duration-200 hover:bg-gray-200 ${
+          selectedFeedback === 'up' ? 'bg-gray-200' : ''
+        }`}
         onClick={() => handleFeedback('up')}
         title="This was helpful"
       >
@@ -34,7 +58,9 @@ const FeedbackButtons = ({ messageId, onFeedback }) => {
       </button>
       
       <button
-        className={`feedback-btn ${selectedFeedback === 'down' ? 'selected' : ''}`}
+        className={`flex items-center justify-center p-2 border-none bg-transparent rounded-lg cursor-pointer transition-colors duration-200 hover:bg-gray-200 ${
+          selectedFeedback === 'down' ? 'bg-gray-200' : ''
+        }`}
         onClick={() => handleFeedback('down')}
         title="This wasn't helpful"
       >
