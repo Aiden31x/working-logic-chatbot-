@@ -1,5 +1,5 @@
 // ChatStep.jsx - Updated with new FeedbackButtons component
-
+import React from 'react';
 import FeedbackButtons from './FeedBackButton';
 import ChatInput from './ChatInput';
 
@@ -117,7 +117,15 @@ const ChatStep = ({
           <div className="flex-1 overflow-y-auto p-6 space-y-4 min-h-0">
             {messages.map((message, index) => (
               <div key={index} className="bg-gray-50 rounded-2xl p-4">
-                <p className="text-gray-800 text-base leading-relaxed">{message}</p>
+                <p className="text-gray-800 text-base leading-relaxed">
+  {message.split('\n').map((line, i) => (
+    <React.Fragment key={i}>
+      {line}
+      <br />
+    </React.Fragment>
+  ))}
+</p>
+
                 {showFeedback && index === messages.length - 1 && (
                   <div className="flex justify-end mt-4">
                     <FeedbackButtons
