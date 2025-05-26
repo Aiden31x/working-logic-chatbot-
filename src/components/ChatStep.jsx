@@ -76,7 +76,7 @@ const ChatStep = ({
               <div className="flex-1">
                 <ChatInput
                   onSendMessage={onNameSubmit}
-                  placeholder="Enter your name..."
+                  placeholder="Enter your name.."
                 />
               </div>
             </div>
