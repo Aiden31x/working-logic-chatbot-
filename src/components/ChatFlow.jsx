@@ -7,7 +7,10 @@ import useChatLogger from "./useChatLogger"; // Import the custom hook
 const ChatFlow = () => {
   const [navStack, setNavStack] = useState(["main"]);
   const [userName, setUserName] = useState("");
+  const [userEmail, setUserEmail] = useState("");
   const [isNameSet, setIsNameSet] = useState(false);
+  const [isEmailSet, setIsEmailSet] = useState(false);
+  const [isUserInfoComplete, setIsUserInfoComplete] = useState(false);
   const [messages, setMessages] = useState([]);
   
   // Initialize the chat logger hook
@@ -29,14 +32,21 @@ const ChatFlow = () => {
   const currentStep = chatbotData[currentKey];
   const processedMessage = currentStep?.message?.replace("{{userName}}", userName) || "";
 
+  // Determine the current input step
+  const getCurrentInputStep = () => {
+    if (!isNameSet) return "name";
+    if (!isEmailSet) return "email";
+    return "complete";
+  };
+
   useEffect(() => {
-    if (isNameSet && processedMessage) {
+    if (isUserInfoComplete && processedMessage) {
       setMessages(prev => [...prev, processedMessage]);
       
       // Log bot message using the specialized function
       logBotMessage(currentKey, processedMessage, currentStep?.options || []);
     }
-  }, [currentKey, isNameSet]);
+  }, [currentKey, isUserInfoComplete]);
 
   const handleOptionClick = (option) => {
     // Log user option selection
@@ -64,6 +74,29 @@ const ChatFlow = () => {
     
     // Log name submission
     logUserInput("name_submission", enteredName, "name_input");
+    
+    console.log("Name submitted:", enteredName);
+  };
+
+  const handleEmailSubmit = (enteredEmail) => {
+    setUserEmail(enteredEmail);
+    setIsEmailSet(true);
+    
+    // Log email submission
+    logUserInput("email_submission", enteredEmail, "email_input");
+    
+    console.log("Email submitted:", enteredEmail);
+  };
+
+  const handleBothSubmitted = (userInfo) => {
+    // This is called when both name and email are collected
+    setIsUserInfoComplete(true);
+    
+    // Log completion of user info collection
+    logUserInput("user_info_complete", JSON.stringify(userInfo), "info_collection");
+    
+    console.log("User info collection complete:", userInfo);
+    console.log("Moving to main chat...");
   };
 
   const handleShowDefault = () => {
@@ -89,8 +122,13 @@ const ChatFlow = () => {
         onOptionClick={handleOptionClick}
         messages={messages}
         userName={userName}
+        userEmail={userEmail}
         isNameSet={isNameSet}
+        isEmailSet={isEmailSet}
+        currentStep={getCurrentInputStep()} // Add this crucial prop
         onNameSubmit={handleNameSubmit}
+        onEmailSubmit={handleEmailSubmit}
+        onBothSubmitted={handleBothSubmitted} // Add this handler
         showFeedback={true}
         onShowDefault={handleShowDefault}
         onFeedback={handleFeedback}
@@ -99,11 +137,16 @@ const ChatFlow = () => {
       {/* Debug Panel - Remove in production */}
       {process.env.NODE_ENV === 'development' && (
         <div className="fixed top-4 right-4 bg-white p-4 rounded-lg shadow-lg border max-w-sm">
-          <h3 className="font-bold text-sm mb-2">Chat Log Debug</h3>
-          <p className="text-xs text-gray-600 mb-2">
-            Session: {sessionId}<br/>
-            Logs: {chatLog.length}
-          </p>
+          <h3 className="font-bold text-sm mb-2">Chat Flow Debug</h3>
+          <div className="text-xs mb-2 space-y-1">
+            <div>Session: {sessionId}</div>
+            <div>Name Set: {isNameSet ? '✅' : '❌'}</div>
+            <div>Email Set: {isEmailSet ? '✅' : '❌'}</div>
+            <div>Info Complete: {isUserInfoComplete ? '✅' : '❌'}</div>
+            <div>Current Step: {getCurrentInputStep()}</div>
+            <div>Current Key: {currentKey}</div>
+            <div>Logs: {chatLog.length}</div>
+          </div>
           <div className="space-y-2">
             <button 
               onClick={downloadChatLogAsExcel}
@@ -122,6 +165,21 @@ const ChatFlow = () => {
               className="w-full px-3 py-1 bg-red-500 text-white text-xs rounded hover:bg-red-600"
             >
               🗑️ Clear Log
+            </button>
+            {/* Reset button for testing */}
+            <button 
+              onClick={() => {
+                setUserName("");
+                setUserEmail("");
+                setIsNameSet(false);
+                setIsEmailSet(false);
+                setIsUserInfoComplete(false);
+                setMessages([]);
+                setNavStack(["main"]);
+              }}
+              className="w-full px-3 py-1 bg-orange-500 text-white text-xs rounded hover:bg-orange-600"
+            >
+              🔄 Reset Flow
             </button>
           </div>
           <div className="mt-2 text-xs bg-gray-100 p-2 rounded">

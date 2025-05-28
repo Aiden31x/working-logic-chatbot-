@@ -164,6 +164,7 @@
         "Back to Main Menu"
       ]
     },
+    
       "REGISTRATION AND CHOICE FILLING": {
         "message": "Here’s everything you need to know about registration and filling your choices:",
         "options": [
@@ -426,7 +427,7 @@
         ]
       },
       "Default": {
-        "message": "Contact our 24/7 helppline number",
+        "message": "Contact our 24/7 helpline mail id archanasingh.edcil@gmail.com",
         "options": [
           "Back to Main Menu"
         ]
